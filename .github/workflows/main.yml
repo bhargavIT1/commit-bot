@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --global user.name "bhargavIT1"
           git config --global user.email "your-bhargavbora79@gmail.com"
-          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/bhargavIT1/Daily_Tracker.git
-          git add .
+         git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/bhargavIT1/commit-bot.git
+         git add .
           git commit -m "Daily commit to keep streak alive" || echo "No changes to commit"
           git push
